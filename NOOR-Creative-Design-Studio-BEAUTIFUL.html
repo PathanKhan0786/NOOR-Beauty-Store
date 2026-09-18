@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NOOR Creative Design Studio — professional Canva-style posters, social media designs and custom creative work in Gujranwala, Pakistan.">
+<title>NOOR — Creative Design Studio</title>
+<style>
+:root{
+  --bg:#fffaf7;--panel:#ffffff;--panel2:#fff6f2;--text:#3b3140;--muted:#766b78;
+  --line:rgba(91,67,82,.12);--gold:#c989a8;--gold2:#a85f83;--white:#fff;
+  --lav:#8e82bd;--cream:#fff1e8;--shadow:0 24px 70px rgba(92,61,83,.14);--radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 8% 8%,rgba(201,137,168,.16),transparent 25%),radial-gradient(circle at 92% 18%,rgba(142,130,189,.14),transparent 24%),radial-gradient(circle at 55% 95%,rgba(255,225,211,.28),transparent 28%);z-index:-2}
+body:after{content:"✿";position:fixed;right:22px;bottom:20px;font-size:92px;color:rgba(201,137,168,.08);font-family:Georgia,serif;transform:rotate(-15deg);pointer-events:none;z-index:-1}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+.container{width:min(1180px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,250,247,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);box-shadow:0 8px 30px rgba(91,67,82,.06)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:Georgia,serif;font-size:28px;letter-spacing:8px;font-weight:700}
+.logo small{display:block;font:500 8px/1.2 Inter,sans-serif;letter-spacing:3px;color:var(--gold);margin-top:-3px}
+.navlinks{display:flex;gap:23px;align-items:center}
+.navlinks a{font-size:13px;color:#665b67;transition:.25s}
+.navlinks a:hover{color:var(--gold2)}
+.menu{display:none;background:none;border:0;color:var(--text);font-size:25px}
+section{padding:105px 0;scroll-margin-top:76px}
+.hero{min-height:100vh;display:grid;place-items:center;padding-top:130px;position:relative;overflow:hidden}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none;z-index:-1}.hero:before{width:300px;height:300px;left:-90px;top:18%;background:rgba(255,205,220,.32);animation:float 7s ease-in-out infinite}.hero:after{width:240px;height:240px;right:-70px;bottom:10%;background:rgba(194,185,235,.28);animation:float 9s ease-in-out infinite reverse}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:4px;text-transform:uppercase;margin-bottom:18px}
+h1{font-family:Georgia,serif;font-size:clamp(55px,8vw,105px);line-height:.92;letter-spacing:-4px;font-weight:500}
+h1 span{color:var(--gold)}
+.hero p{max-width:590px;color:var(--muted);font-size:17px;margin:28px 0 34px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;border:1px solid var(--line);transition:.25s;font-size:13px}
+.btn.primary{background:var(--gold);color:#101010;border-color:var(--gold);font-weight:700}
+.btn.primary:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.hero-art{height:550px;position:relative;display:grid;place-items:center}
+.poster-stack{position:relative;width:min(390px,82%);height:500px}
+.poster{position:absolute;inset:0;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;justify-content:space-between;padding:28px}
+.poster.one{transform:rotate(-8deg);background:linear-gradient(145deg,#ffd6e5,#e8b3c9 55%,#b77d9c);color:#4a3040}
+.poster.two{transform:rotate(4deg);background:linear-gradient(150deg,#eee8fb,#cfc4ec);color:#443957;z-index:2}
+.poster.three{background:linear-gradient(160deg,#fffdfb,#ffe7d9 55%,#e7bfd0);color:#4a3540;transform:rotate(-1deg);z-index:3}
+.poster .mini{font-size:9px;letter-spacing:3px;text-transform:uppercase}
+.poster h3{font-family:Georgia,serif;font-size:43px;line-height:1}
+.poster p{font-size:12px;opacity:.75}
+.poster .circle{width:115px;height:115px;border-radius:50%;border:1px solid currentColor;margin:auto;display:grid;place-items:center;font-family:Georgia,serif;font-size:35px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}
+.section-head h2{font:500 clamp(34px,5vw,55px)/1 Georgia,serif}
+.section-head p{max-width:510px;color:var(--muted);font-size:14px}
+.grid{display:grid;gap:18px}
+.services{grid-template-columns:repeat(4,1fr)}
+.card{background:linear-gradient(145deg,#ffffff,#fff6f3);border:1px solid var(--line);border-radius:var(--radius);padding:27px;transition:.35s;box-shadow:0 10px 30px rgba(91,67,82,.06)}
+.card:hover{transform:translateY(-7px);border-color:rgba(217,184,120,.45);box-shadow:var(--shadow)}
+.icon{font-size:27px;margin-bottom:18px;color:var(--gold)}
+.card h3{font:500 24px Georgia,serif;margin-bottom:9px}
+.card p{font-size:13px;color:var(--muted)}
+.number{font-size:11px;color:var(--gold);letter-spacing:2px}
+.portfolio{grid-template-columns:repeat(3,1fr)}
+.work{min-height:330px;border-radius:25px;overflow:hidden;position:relative;border:1px solid var(--line);background:#fff;transition:.35s;box-shadow:0 12px 35px rgba(91,67,82,.08)}
+.work:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.work .visual{height:100%;padding:25px;display:flex;flex-direction:column;justify-content:space-between}
+.visual.sale{background:linear-gradient(140deg,#ffe1b8,#d995ae 63%)}
+.visual.food{background:radial-gradient(circle at 70% 35%,#ffd4a8,transparent 17%),linear-gradient(145deg,#fff1e5,#d8b3c7)}
+.visual.event{background:linear-gradient(140deg,#ddd7f3,#a99bcb)}
+.visual.business{background:linear-gradient(135deg,#f6e9dd,#c99eaa)}
+.visual.social{background:linear-gradient(135deg,#f2d9e3,#bd8da7)}
+.visual.wedding{background:linear-gradient(135deg,#fff5ee,#e7c1d0)}
+.visual.youtube{background:linear-gradient(135deg,#e6e1f3,#a99dc6)}
+.visual.flyer{background:linear-gradient(135deg,#f7eee7,#c7b0c4)}
+.visual.custom{background:linear-gradient(135deg,#e7bfd0,#b09bcf 55%,#f5d8c9)}
+.work small{letter-spacing:3px;text-transform:uppercase;font-size:9px}
+.work h3{font:500 42px Georgia,serif;max-width:240px;line-height:.95}
+.work p{font-size:11px;opacity:.7}
+.price-grid{grid-template-columns:repeat(3,1fr)}
+.price{position:relative}
+.price.featured{border-color:rgba(217,184,120,.55)}
+.price .tag{position:absolute;right:20px;top:20px;background:var(--gold);color:#111;padding:5px 10px;border-radius:99px;font-size:9px;font-weight:800;letter-spacing:1px}
+.price h3{font:500 29px Georgia,serif}
+.amount{font:600 35px Georgia,serif;margin:17px 0;color:var(--gold2)}
+.price ul{list-style:none;color:var(--muted);font-size:13px;line-height:2.2;margin:18px 0}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.about-box{min-height:430px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,#1a1815,#0d0d0d);display:grid;place-items:center;text-align:center;padding:40px}
+.about-box strong{font:500 80px Georgia,serif;color:var(--gold)}
+.about h2{font:500 54px/1 Georgia,serif;margin-bottom:22px}
+.about p{color:var(--muted);font-size:15px;margin-bottom:18px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.stat{border-top:1px solid var(--line);padding-top:15px}
+.stat b{font:500 28px Georgia,serif;color:var(--gold2);display:block}
+.stat span{font-size:10px;color:var(--muted);letter-spacing:1px}
+.form-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}
+.form-intro{padding:35px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,#fff,#fff0f2);box-shadow:0 14px 38px rgba(91,67,82,.07)}
+.form-intro h2{font:500 45px/1 Georgia,serif;margin:16px 0}
+.form-intro p{color:var(--muted);font-size:14px}
+.contact-list{margin-top:30px;display:grid;gap:14px}
+.contact-list div{padding:15px;border:1px solid var(--line);border-radius:15px}
+.contact-list small{display:block;color:var(--gold);font-size:9px;letter-spacing:2px;text-transform:uppercase}
+.form{border:1px solid var(--line);border-radius:26px;padding:30px;background:#ffffff;box-shadow:0 14px 38px rgba(91,67,82,.07)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:grid;gap:7px;margin-bottom:15px}
+.field.full{grid-column:1/-1}
+label{font-size:11px;color:#c7c1b8;letter-spacing:.4px}
+input,textarea,select{width:100%;background:#fffaf9;color:var(--text);border:1px solid var(--line);border-radius:13px;padding:13px 14px;outline:none;transition:.25s}
+input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+textarea{min-height:120px;resize:vertical}
+.notice{font-size:11px;color:var(--muted);margin-top:12px}
+.contact{background:linear-gradient(180deg,#fff5f2,#f4effa)}
+.contact-card{border:1px solid var(--line);border-radius:30px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:radial-gradient(circle at 85% 30%,rgba(201,137,168,.18),transparent 30%),radial-gradient(circle at 15% 80%,rgba(142,130,189,.12),transparent 28%),#fff}
+.contact-card h2{font:500 52px/1 Georgia,serif}
+.contact-card p{color:var(--muted);margin-top:12px}
+footer{border-top:1px solid var(--line);padding:27px 0;color:#807b73;font-size:11px}
+.footer{display:flex;justify-content:space-between;gap:20px}
+.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#fff;color:#4b3b47;border:1px solid var(--line);padding:13px 18px;border-radius:999px;font-size:12px;z-index:300;transition:.3s;box-shadow:var(--shadow)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s ease}
+.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){
+ .navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:rgba(255,250,247,.97);border-bottom:1px solid var(--line);padding:20px;flex-direction:column}
+ .navlinks.open{display:flex}.menu{display:block}.hero-grid,.about,.form-wrap{grid-template-columns:1fr}.hero-art{height:470px}.services{grid-template-columns:repeat(2,1fr)}.portfolio{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+ section{padding:78px 0}.hero{padding-top:115px}.hero-art{height:400px}.poster-stack{height:360px}.poster{padding:21px}.poster h3{font-size:32px}.section-head{display:block}.section-head p{margin-top:15px}.services,.portfolio,.price-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-card{display:block;padding:30px}.contact-card h2,.about h2{font-size:40px}.footer{display:block}.footer span{display:block;margin-top:8px}
+}
+
+.floral{position:absolute;pointer-events:none;z-index:0;font-family:Georgia,serif;line-height:1}
+.floral.a{top:72px;left:3%;font-size:72px;color:rgba(201,137,168,.13);transform:rotate(-18deg)}
+.floral.b{top:80px;right:3%;font-size:62px;color:rgba(142,130,189,.13);transform:rotate(18deg)}
+section{position:relative}
+section > .container{position:relative;z-index:1}
+@keyframes float{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(0,-14px,0) rotate(4deg)}}
+@keyframes softPulse{0%,100%{box-shadow:0 10px 30px rgba(91,67,82,.06)}50%{box-shadow:0 18px 45px rgba(201,137,168,.18)}}
+.poster-stack{animation:float 8s ease-in-out infinite}
+.card:hover{animation:softPulse 1.3s ease-in-out}
+.btn.primary{box-shadow:0 10px 22px rgba(201,137,168,.22)}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">NOOR<small>CREATIVE DESIGN STUDIO</small></a>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#order">Order</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main><div class="floral a" aria-hidden="true">❀</div><div class="floral b" aria-hidden="true">✿</div>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="reveal">
+   <div class="eyebrow">Gujranwala • Pakistan</div>
+   <h1>Designs with<br><span>NOOR.</span></h1>
+   <p>Professional Canva-style posters, social media graphics and custom creative designs made with a clean, modern and premium visual direction.</p>
+   <div class="actions"><a class="btn primary" href="#portfolio">Explore Designs</a><a class="btn ghost" href="#order">Start a Project</a></div>
+  </div>
+  <div class="hero-art reveal">
+   <div class="poster-stack">
+    <div class="poster one"><div class="mini">NOOR • Visual Studio</div><div class="circle">N</div><div><h3>Bold<br>Ideas.</h3><p>Creative design for modern brands.</p></div></div>
+    <div class="poster two"><div class="mini">Social • Business • Events</div><div class="circle">NOOR</div><div><h3>Make it<br>stand out.</h3><p>Designed for digital impact.</p></div></div>
+    <div class="poster three"><div class="mini">Poster Design • 2026</div><div class="circle">NOOR</div><div><h3>Simple.<br>Premium.</h3><p>Clean layouts with a refined finish.</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="container about">
+  <div class="about-box reveal"><div><strong>NOOR</strong><p>Creative Design Studio</p></div></div>
+  <div class="reveal">
+   <div class="eyebrow">About the Studio</div>
+   <h2>Visual ideas, crafted with purpose.</h2>
+   <p>NOOR creates professional, Canva-style visual designs for businesses, events, social media and personal projects.</p>
+   <p>Every design is focused on clear communication, balanced typography, strong composition and a polished presentation.</p>
+   <div class="stats"><div class="stat"><b>01</b><span>Clean Direction</span></div><div class="stat"><b>02</b><span>Custom Layouts</span></div><div class="stat"><b>03</b><span>Premium Finish</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="container">
+  <div class="section-head reveal"><h2>Services</h2><p>Choose a design category or request something completely custom. Each service is presented with professional demo concepts.</p></div>
+  <div class="grid services">
+   <div class="card reveal"><div class="number">01</div><div class="icon">✦</div><h3>Social Media</h3><p>Instagram, Facebook and promotional posts designed for strong visual impact.</p></div>
+   <div class="card reveal"><div class="number">02</div><div class="icon">▣</div><h3>Business Posters</h3><p>Professional advertisements, announcements, offers and brand promotions.</p></div>
+   <div class="card reveal"><div class="number">03</div><div class="icon">◇</div><h3>Sale & Promo</h3><p>Modern sale graphics, product promotions and campaign creatives.</p></div>
+   <div class="card reveal"><div class="number">04</div><div class="icon">✧</div><h3>Events</h3><p>Elegant posters for launches, workshops, gatherings and special occasions.</p></div>
+   <div class="card reveal"><div class="number">05</div><div class="icon">♡</div><h3>Wedding & Birthday</h3><p>Invitation and celebration graphics with a refined personal touch.</p></div>
+   <div class="card reveal"><div class="number">06</div><div class="icon">▶</div><h3>YouTube Graphics</h3><p>Bold thumbnail concepts and channel promotional visuals.</p></div>
+   <div class="card reveal"><div class="number">07</div><div class="icon">▤</div><h3>Flyers</h3><p>Clear, attractive flyer and information layouts for print or digital use.</p></div>
+   <div class="card reveal"><div class="number">08</div><div class="icon">＋</div><h3>Custom Design</h3><p>Have a different idea? Share your brief and NOOR will shape the visual direction.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="portfolio">
+ <div class="container">
+  <div class="section-head reveal"><h2>Selected Designs</h2><p>Original demo concepts inspired by the clean, versatile visual language commonly used for Canva-based professional design.</p></div>
+  <div class="grid portfolio">
+   <div class="work reveal"><div class="visual sale"><small>Sale Poster</small><h3>Up to<br>50% Off</h3><p>MODERN PROMOTION • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual food"><small>Food Campaign</small><h3>Fresh.<br>Every Day.</h3><p>MENU & SOCIAL CREATIVE • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual event"><small>Event Poster</small><h3>Creative<br>Night</h3><p>EVENT VISUAL • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual business"><small>Business Ad</small><h3>Build Your<br>Brand</h3><p>BUSINESS CREATIVE • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual social"><small>Social Post</small><h3>New<br>Collection</h3><p>INSTAGRAM CREATIVE • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual wedding"><small>Celebration</small><h3>Save<br>The Date</h3><p>INVITATION • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual youtube"><small>YouTube</small><h3>Think<br>Different</h3><p>THUMBNAIL • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual flyer"><small>Flyer</small><h3>Grand<br>Opening</h3><p>BUSINESS FLYER • NOOR DEMO</p></div></div>
+   <div class="work reveal"><div class="visual custom"><small>Custom</small><h3>Your<br>Vision.</h3><p>CUSTOM CREATIVE • NOOR DEMO</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="pricing">
+ <div class="container">
+  <div class="section-head reveal"><h2>Pricing</h2><p>Simple packages for common design needs. Custom requirements can be discussed through the order form.</p></div>
+  <div class="grid price-grid">
+   <div class="card price reveal"><h3>Starter</h3><div class="amount">Rs. 500</div><ul><li>1 custom design</li><li>Social media size</li><li>1 revision</li><li>High-quality export</li></ul><a class="btn ghost" href="#order">Choose Starter</a></div>
+   <div class="card price featured reveal"><div class="tag">POPULAR</div><h3>Professional</h3><div class="amount">Rs. 1,200</div><ul><li>3 custom designs</li><li>Multiple formats</li><li>2 revisions</li><li>Premium presentation</li></ul><a class="btn primary" href="#order">Choose Professional</a></div>
+   <div class="card price reveal"><h3>Business</h3><div class="amount">Rs. 2,500</div><ul><li>7 custom designs</li><li>Campaign-ready set</li><li>3 revisions</li><li>Consistent visual style</li></ul><a class="btn ghost" href="#order">Choose Business</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="order">
+ <div class="container form-wrap">
+  <div class="form-intro reveal">
+   <div class="eyebrow">Start a Project</div>
+   <h2>Tell NOOR what you need.</h2>
+   <p>Fill in the brief. After submission, WhatsApp will open with your project details ready to send. There is no direct call action.</p>
+   <div class="contact-list">
+    <div><small>WhatsApp</small>03372892298</div>
+    <div><small>Email</small>nf565176@gmail.com</div>
+    <div><small>Location</small>Gujranwala, Pakistan</div>
+   </div>
+  </div>
+  <form class="form reveal" id="orderForm">
+   <div class="fields">
+    <div class="field"><label>Full Name *</label><input id="name" required placeholder="Your name"></div>
+    <div class="field"><label>WhatsApp Number *</label><input id="phone" required placeholder="03XXXXXXXXX"></div>
+    <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com"></div>
+    <div class="field"><label>Design Type *</label><select id="type" required><option value="">Select a service</option><option>Social Media Post</option><option>Business Poster</option><option>Sale & Promotional Poster</option><option>Event Poster</option><option>Wedding / Birthday</option><option>YouTube Thumbnail</option><option>Flyer</option><option>Custom Design</option></select></div>
+    <div class="field"><label>Preferred Package</label><select id="package"><option>Not sure yet</option><option>Starter — Rs. 500</option><option>Professional — Rs. 1,200</option><option>Business — Rs. 2,500</option><option>Custom Quote</option></select></div>
+    <div class="field"><label>Budget</label><input id="budget" placeholder="e.g. Rs. 1,000"></div>
+    <div class="field full"><label>Project Details *</label><textarea id="details" required placeholder="Tell us about the design, text, colors, product, event or reference you have in mind..."></textarea></div>
+   </div>
+   <button class="btn primary" type="submit">Send Brief on WhatsApp</button>
+   <div class="notice">Your form details are prepared as a WhatsApp message. Review them before sending.</div>
+  </form>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="container">
+  <div class="contact-card reveal">
+   <div><div class="eyebrow">Contact NOOR</div><h2>Let's create<br>something memorable.</h2><p>Professional design services from Gujranwala, Pakistan.</p></div>
+   <div class="actions"><a class="btn primary" href="#order">Request a Design</a><a class="btn ghost" href="mailto:nf565176@gmail.com">Email NOOR</a></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer"><span>© <span id="year"></span> NOOR • Creative Design Studio</span><span>Gujranwala, Pakistan • 03372892298 • nf565176@gmail.com</span></div>
+</footer>
+<div class="toast" id="toast">Your WhatsApp brief is ready.</div>
+
+<script>
+const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+if('IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+ },{threshold:.12});
+ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('show'));}
+
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('orderForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const email=document.getElementById('email').value.trim();
+ const type=document.getElementById('type').value;
+ const pack=document.getElementById('package').value;
+ const budget=document.getElementById('budget').value.trim();
+ const details=document.getElementById('details').value.trim();
+
+ const msg=`Hello NOOR, I would like to request a design.
+
+Name: ${name}
+WhatsApp: ${phone}
+Email: ${email || 'Not provided'}
+Design Type: ${type}
+Package: ${pack}
+Budget: ${budget || 'Not specified'}
+
+Project Details:
+${details}`;
+
+ const url='https://wa.me/923372892298?text='+encodeURIComponent(msg);
+ const w=window.open(url,'_blank');
+ if(!w) location.href=url;
+ const toast=document.getElementById('toast');
+ toast.classList.add('show');
+ setTimeout(()=>toast.classList.remove('show'),3000);
+});
+</script>
+</body>
+</html>
